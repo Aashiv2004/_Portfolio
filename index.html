@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f7f7f7;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .projects, .contact, .about {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .project, .contactForm {
+            margin-bottom: 20px;
+        }
+        
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .contactForm input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        .contactForm input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .contactForm input[type="submit"]:hover {
+            background-color: #555;
+        }
+        
+        .about img {
+            max-width: 100%;
+            border-radius: 50%;
+            animation: fadeIn 1s ease;
+        }
+        
+        .about p {
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+        
+        .about h3, .contact h2, .projects h2 {
+            text-align: center;
+        }
+        
+        .skills, .achievements {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .skills li, .achievements li {
+            margin: 5px 0;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Hackathon&Certificates</a></li>
+            <li><a href="#cgpa">CGPA</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hackkerrank">Hackkerrank</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    </section>
+
+    <section class="about">
+        <h2>About Me</h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./images/profile_photo.png" alt="Your Name">
+        <p>I am Aashiv Gupta, studying Computer Science and Engineering (B.Tech) at SRM Institute of Science and Technology, Kattankulathur, Chennai. I am a second-year B.Tech student.</p>
+        
+        <fieldset>
+        <p>Contact Details:<br>
+            Phone number: 7505953528<br>
+            Email: ag1478@srmist.edu.in
+        </p>
+
+        <a href="https://github.com/Aashiv2004"><img src="https://cdn.icon-icons.com/icons2/1476/PNG/512/github_101792.png" alt="Github" width="45px" height="45px"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.linkedin.com/in/aashiv-gupta-805720253"><img src="https://www.keesingtechnologies.com/wp-content/uploads/2018/07/Linkedin-Icon.png" alt="" width="35px" height="35px"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/gupta_aashiv/"><img src="https://th.bing.com/th/id/OIP.-ZirgQE5pr8e7htQWowJIgHaHa?pid=ImgDet&rs=1" alt="instagram" width="40px" height="40px"></a>
+    
+    </fieldset>
+
+    <br>
+    <br>
+        <fieldset>
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>python</li>
+        </ul>
+    </fieldset>
+    </section>
+
+    <section class="certificates" id="certificates">
+        <div class="max-width">
+            <h2 class="title" style="text-align: center;">Hackathon & Certificates</h2>
+
+            <table>
+                <tr>
+                    <td><img src="./images/c1.png" alt="certificate_1" width="500px" height="350px"></td>
+                    <td><img src="./images/c2.png" alt="certificate_2" width="500px" height="350px"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><img src="./images/c3.png" alt="certificate_3" width="500px" height="350px"></td>
+                    <td><img src="./images/c4.png" alt="certificate_4" width="500px" height="350px"></td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+<br><br>
+    <section>
+        <fieldset>
+        <div>
+            <h1>CGPA</h1>
+            <table border="3px" style="background-color:rgba(171, 180, 183, 0.749);width: 450px;height:100px">
+                <tr>
+                    <td><h3>Semester-1</h3></td>
+                    <td><h3>Semester-2</h3></td>
+                </tr>
+                <tr>
+                    <td><h5>8.05</h5></td>
+                    <td><h5>8.10</h5></td>
+                </tr>
+            </table>
+        </div>
+    </fieldset>
+    </section>
+    <br><br>
+
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title" style="text-align: center;">My Projects</h2>
+
+            <div class="project">
+                <fieldset>
+                    <legend><h1>Project 1</h1></legend>
+                <table>
+                    <tr>
+                        <td><img src="./images/medical_management_system.png" alt="Project 1" width="400px" height="300px"><br><h3 style="text-align: center;">Medical Management Syatem
+                        </h3></td>
+                        <td><p style="text-align: justify;">In the age of visual content dominance, the intersection of computer vision and natural 
+                            language processing has paved the way for innovative applications, one of which is Automatic 
+                            Image Captioning. This project delves into the realm of image caption generation using deep 
+                            learning techniques. We employed a combination of Convolutional Neural Networks (CNNs) 
+                            for image feature extraction and Long Short-Term Memory networks (LSTMs) for generating 
+                            textual descriptions. Our approach involved utilizing the VGG16 model pre-trained on 
+                            ImageNet for image feature extraction, and a custom-designed LSTM-based neural network 
+                            for sequence generation.
+                            This project not only demonstrates the fusion of computer vision and natural language 
+                            processing but also serves as an educational tool, emphasizing the significance of deep learning 
+                            in real-world applications.</p></td>
+                        </tr>
+                </table>
+                </fieldset>
+
+            </div>
+            <br>
+            <div class="project">
+                <fieldset>
+                    <legend><h1>Project 2</h1></legend>
+                <table>
+                    <tr>
+                        <td><img src="https://lh3.googleusercontent.com/4FsOEydE2eN2CeG30gy-JEg5kz0gKgO9cpdOid6T5z8DiZgczm7V7ryjy2fFOfqMfxQ=w170" alt="Project 2" width="300px" height="400px"><br><h3 style="text-align: center;">ATM Machine Simulator</h3></td>
+                        <td><p style="text-align: justify;">The ATM Machine Simulator is a comprehensive virtual environment meticulously crafted to replicate the intricate functionalities and operations of an Automated Teller Machine (ATM) within the context of an operating system. Created with the primary intent of serving as an interactive educational tool, this simulator offers users a practical and immersive experience in navigating the diverse operations of an ATM, including but not limited to cash withdrawals, fund transfers, balance inquiries, and account management. By emulating real-world scenarios and transactional interactions, the simulator provides users with an in-depth understanding of the underlying operating system mechanisms, process scheduling, memory management, and resource allocation techniques involved in ensuring secure and efficient transaction processing. Designed with a user-centric approach, the simulator boasts an intuitive and user-friendly interface, enabling users to seamlessly familiarize themselves with the intricacies of operating system structures, file management, and secure transaction processing protocols in the context of an ATM environment. By simulating various banking functionalities and transactional workflows, the ATM Machine Simulator serves as an invaluable educational platform for users to gain practical insights into the complexities of modern operating systems and their role in facilitating seamless and secure banking operations. </p>
+                    </tr>
+                </table>
+                </fieldset>
+
+            </div>
+            <br>
+            <div class="project">
+                <fieldset>
+                    <legend><h1>Project 3</h1></legend>
+                <table>
+                    <tr>
+                        <td><img src="./images/smart_pedometer.png" alt="Project 3" width="300px" height="400px"><br><h3 style="text-align: center;">Smart Pedometer</h3></td>
+                        <td><p style="text-align: justify;">In an era characterized by growing health consciousness, the "Smart Pedometer" mini project offers a fresh perspective on fitness tracking and physical activity monitoring. This compact, wearable device goes beyond traditional step counting, incorporating state-of-the-art features to enhance accuracy, user-friendliness, and energy efficiency. Its essential components consist of an accelerometer, microcontroller, timer circuit, user interface, and LED indicator. The pedometer continuously monitors the user's movements through the accelerometer, updating the step count when motion is detected. However, the standout feature is the "Smart Pause" mechanism, which deploys a timer circuit to pause step counting when the accelerometer registers prolonged inactivity, preventing any stationary or insignificant motions from being erroneously counted as steps. An LED indicator offers immediate visual feedback, alerting users when step counting is temporarily paused. Prioritizing user-friendliness, the device incorporates a push-button switch, empowering users to manually enable or disable the "Smart Pause" feature, making it effortless to interrupt step counting during anticipated short periods of inactivity. Step counting swiftly resumes upon detecting motion, and the LED indicator deactivates. The key benefits of the "Smart Pedometer" encompass improved accuracy, user-friendly operation, and energy conservation. This intelligent, compact device is poised to inspire individuals to lead more active and healthier lives while simplifying their physical activity tracking, thereby contributing to their overall well-being. </p></td>
+                    </tr>
+                </table>
+                </fieldset>
+
+            </div>
+            <br>
+            <br>
+            <div class="project">
+                <fieldset>
+                    <legend><h1>Project 4</h1></legend>
+                <table>
+                    <tr>
+                        <td><img src="./images/music_player.png" alt="Project 4" width="300px" height="300px"><br><h3 style="text-align: center;">Music Player</h3></td>
+                        <td><p style="text-align: justify;">Introducing a dynamic and versatile music player crafted through the power of doubly linked lists in JavaScript. This innovative implementation enables seamless playlist management, allowing users to effortlessly add, remove, and traverse through their music collection. Each track is encapsulated within a doubly linked node, featuring essential details like name, length, and path. The playlist's flexibility is enhanced by bidirectional navigation, enabling users to effortlessly move forward and backward through their curated list. With a solid foundation in data structures, this music player project sets the stage for a personalized and engaging audio experience, promising both simplicity and functionality in the realm of digital soundscapes.</p></td>
+                    </tr>
+                </table>
+                </fieldset>
+
+            </div>
+            <br>
+            <div class="project">
+                <fieldset>
+                    <legend><h1>Project 5</h1></legend>
+                <table>
+                    <tr>
+                        <td><img src="./images/movie_ticket_reservation.png" alt="Project 5" width="400px" height="300px"><br><h3 style="text-align: center;">Movie Ticket Reservation</h3></td>
+                        <td><p style="text-align: justify;">In this project we have decided to create a 
+                            program for the generation of movie 
+                            tickets. The computer will take inputs from 
+                            the user and thereby print the output in 
+                            terms of movie ticket. The main objective 
+                            is to print the tickets in an easier and 
+                            convenient way by executing a python 
+                            program</p></td>
+                    </tr>
+                </table>
+                </fieldset>
+
+            </div>
+    </section>
+    <br><br>
+    <section>
+        <fieldset style="background-color: rgb(224, 202, 202)128, 128, 128);">
+        <div>
+        <h1 style="text-align: center;">Hackerrank</h1>
+        <img src="./images/hackerrank.png" alt="hackerrank" width="800px" height="400px">
+    </div>
+</fieldset>
+    </section>
+    <br>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch with me, feel free to fill out the form below:</p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Aashiv Gupta"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
